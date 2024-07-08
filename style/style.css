@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(77, 87, 152);
+    height: 130px;
+    width: 100%;
+    position: fixed;
+    opacity: 90%;
+
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.header img{
+    opacity: none;
+    width: 150px;
+    height: 150px;
+    border: 2px black solid;
+    box-shadow: 1px 1px 1px rgb(255, 4, 0);
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: -120px;
+    background-color: rgb(77, 87, 152);
+}
+
+.navbar{
+    display: flex;
+    padding: 20px;
+    gap: 5px;
+    list-style: none;
+    margin-top: 70px;
+    margin-right: 200px;
+    opacity: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 0);
+    transition: 3s;
+    color: rgb(205, 203, 203);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+.galeria-portada{
+    background-image: url(../assets/img/fondo-galeria.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140% 140%;
+    width: 100%;
+    height: 600px;
+}
+
+#slaider{
+    width: 80%;
+    height: 500px;
+    background-color: brown;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#contenedor{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100% 100% 100%;
+    animation-name: mover;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+#imagen1{
+    background-image: url(../assets/img/portada1.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+}
+
+#imagen2 {
+    background-image: url(../assets/img/portada2.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+}
+
+#imagen3 {
+    background-image: url(../assets/img/portada3.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+}
+
+@keyframes mover{
+    24% {
+        margin-left: 0%;
+    }
+    34%{
+        margin-left: -100%;
+    }
+    44%{
+        margin-left: -100%;
+    }
+    54%{
+        margin-left: -200%;
+    }
+    64%{
+        margin-left: -200%;
+    }
+    74%{
+        margin-left: -100%;
+    }
+    84%{
+        margin-left: 0%;
+
+    }
+}
+
+
+
+
+
+
+.inicio{
+    background-image: url(../assets/img/fondo-inicio.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background
+    width: 100%;
+    height: 400px;    
+}
+
+.inicio h2{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding: 50px;
+    text-shadow: 2px 2px 2px rgb(208, 208, 208);
+    margin-left: 400px;
+}
+
+.inicio p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgb(208, 208, 208);
+}
+
+.la-academia{
+    background-color: rgb(77, 87, 152);
+    width: 100%;
+    height: 50px;
+    scroll-margin-top: 18ex
+}
+
+.titulo-academia h2{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+.contenido-academia div{
+    display: inline-flex;
+    justify-content: center;
+    padding: 30px;
+}
+.contenido-academia img{
+    width: 400px;
+    height: 350px;
+    margin-top: 30px;
+}
+
+.contenido-academia p{
+    width: 50%;
+    text-align: justify;
+    padding: 30px;
+}
+
+
+.instructores{
+    background-color: rgb(77, 87, 152);
+    width: 100%;
+    height: 50px;
+    margin-top: 500px;
+    scroll-margin-top: 18ex
+}
+.titulo-instructores h2{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+.contenido-instructores{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.profe1 img{
+    margin-top: 50px;
+    width: 400px;
+    height: 500px;
+    border-radius: 1000px;
+}
+
+.profe1 h2{
+    padding-top: 10px;
+    margin-left: 100px;
+
+}
+
+.profe1 h3{
+    margin-left: 140px;
+}
+
+.profe2 img{
+    margin-top: 50px;
+    width: 400px;
+    height: 500px;
+    border-radius: 1000px;
+}
+
+.profe2 h2{
+    padding-top: 10px;
+    margin-left: 80px;
+
+}
+
+.profe2 h3{
+    margin-left: 140px;
+}
+
+.contacto{
+    background-color: rgb(77, 87, 152);
+    width: 100%;
+    height: 50px;
+    margin-top: 500px;
+    scroll-margin-top: 18ex
+}
+.titulo-contacto h2{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+.contenido-info{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
+
+.contenido-info-1 {
+    margin-top: 50px;
+}
+
+.contenido-info-1 a {
+    text-decoration: none;
+}
+
+.contenido-info-1 a img {
+    width: 30px;
+    margin-right: 10px;
+}
+/*formulario*/
+
+
+.contenido-formulario{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+form {
+    padding: 20px 45px;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+ form img{
+    width: 60px;
+ }
+ form h2{
+    margin-bottom: 15px;
+ }
+
+html{
+    scroll-behavior: smooth;
+}
